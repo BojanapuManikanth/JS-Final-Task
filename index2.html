@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stackly Store</title>
+<link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+<header>
+  <h2>🛍️ MY Store</h2>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search..." />
+
+    <select id="category">
+      <option value="">All Categories</option>
+      <option value="men's clothing">Men's clothing</option>
+      <option value="women's clothing">Women's clothing</option>
+      <option value="electronics">Electronics</option>
+      <option value="jewelery">Jewelry</option>
+    </select>
+
+    <button onclick="sortLow()">⬆ Price</button>
+    <button onclick="sortHigh()">⬇ Price</button>
+  </div>
+
+  <div>🛒 Cart: <span id="cart-count">0</span></div>
+</header>
+
+<div id="loader">Loading...</div>
+<div id="products"></div>
+
+<div id="cart">
+  <h3>Cart</h3>
+  <div id="cart-items"></div>
+  <h4>Total: $<span id="total">0</span></h4>
+</div>
+<script src="./script2.js"></script>
+
+</body>
+</html>
